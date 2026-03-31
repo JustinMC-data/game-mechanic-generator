@@ -11,7 +11,12 @@ requires-python = ">=3.11"
 authors = [
   { name = "OpenAI Codex" }
 ]
-dependencies = []
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "mangum",
+    "pydantic",
+]
 
 [project.scripts]
 mechanic-generator = "procedural_mechanic_generator.cli:main"
